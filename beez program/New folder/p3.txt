@@ -1,0 +1,13 @@
+import java.util.*;
+
+public class MyClass {
+    public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    int Num_1 = sc.nextInt();
+    int Num_2 = sc.nextInt();
+    Num_1 = Num_1 + Num_2;
+    Num_2 = Num_1 - Num_2;
+    Num_1 = Num_2 - Num_1;
+    System.out.println(Num_1 +" "+Num_2);
+    }
+}

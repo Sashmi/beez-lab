@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class MyClass {
+    
+    static int singleDigit(int number)
+    {
+        int sum=0; 
+        
+        while(number!=0){
+        int n = number%10;
+        sum += n;
+        number /=10;
+    }
+    if(sum>9){
+        sum = singleDigit(sum);
+    }
+    return sum;
+    }
+    public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    int Number = sc.nextInt();
+    int value = singleDigit(Number);
+    System.out.print(value);
+    }
+    
+}

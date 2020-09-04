@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class MyClass {
+    public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    String time = sc.next();
+    String timing[] = time.split(":");
+    int hours = Integer.parseInt(timing[0]);
+    int minutes = Integer.parseInt(timing[1]);
+    minutes = minutes/5;
+    int diff = Math.abs(hours-minutes);
+    System.out.print(diff*30);
+    
+    
+    }
+}

@@ -1,0 +1,50 @@
+import java.util.*;
+
+public class MyClass {
+    public static void main(String args[]) {
+     Scanner sc = new Scanner(System.in);
+     int count = sc.nextInt();
+     for(int i=0;i<count;i++)
+     {
+     System.out.println("Enter the quaterly exam marks:");
+     System.out.println("english");
+     int eng_q = sc.nextInt();
+     System.out.println("tamil");
+     int tam_q = sc.nextInt();
+     System.out.println("Math");
+     int mat_q = sc.nextInt();
+     System.out.println("science");
+     int sci_q = sc.nextInt();
+     System.out.println("Social");
+     int ssc_q = sc.nextInt();
+     
+     System.out.println("Enter the halferly exam marks:");
+     System.out.println("english");
+     int eng_h = sc.nextInt();
+     System.out.println("tamil");
+     int tam_h = sc.nextInt();
+     System.out.println("Math");
+     int mat_h = sc.nextInt();
+     System.out.println("science");
+     int sci_h = sc.nextInt();
+     System.out.println("Social");
+     int ssc_h = sc.nextInt();
+     
+     System.out.println("the average are:");
+     double eng_a = (eng_q+eng_h)/2.0;
+     double tam_a = (tam_q+tam_h)/2.0;
+     double mat_a = (mat_q+mat_h)/2.0;
+     double sci_a = (sci_q+sci_h)/2.0;
+     double ssc_a = (ssc_q+ssc_h)/2.0;
+     
+     System.out.println("English" + eng_a);
+     System.out.println("tamil" +tam_a);
+     System.out.println("math"+ mat_a);
+     System.out.println("Science"+sci_a);
+     System.out.println("Social"+ssc_a);
+	 
+	 System.out.println();
+     
+     }
+    }
+}

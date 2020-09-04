@@ -1,0 +1,27 @@
+import java.util.*;
+import java.util.Arrays; 
+
+public class MyClass {
+    public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    //int Input = sc.nextInt();
+    int array[]= new int[10];
+    int index=0;
+    int missingNumber=0;
+    while(sc.hasNextInt()){
+        int n = sc.nextInt();
+        array[index] = n;
+        index++;
+    }
+    Arrays.sort(array);
+    
+    for(int loop=1;loop<array.length;loop++)
+    {
+        if(array[loop]-array[loop-1]!=1){
+            missingNumber = array[loop]-1;
+        }
+    }
+    System.out.println(missingNumber);
+    
+    }
+}

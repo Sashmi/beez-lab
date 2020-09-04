@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class MyClass {
+    public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    String string = sc.nextLine();
+    int charCount=string.length();
+    for(int i=0;i<string.length() ;i++)
+    {
+        if(string.charAt(i)==' ' || string.charAt(i)=='\n')
+        {
+            charCount =charCount-1;
+            
+        }
+    }
+    System.out.println(charCount);
+
+    
+    }
+}
